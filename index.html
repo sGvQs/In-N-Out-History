@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <div class="container">
+        <div class="mb-600">
+            <h1 class="fadein" id="red-text">IN-N-OUT BURGER</h1>
+            <img class="fadein" id="pic" src="https://www.dissapore.com/wp-content/uploads/2021/10/in-n-out-burger.jpg" alt="">
+            <h2 id="In-N-Out-history" class="language-text">The quintessential California brand <br>started as the state's first <span>drive-through</span> hamburger stand in 1948.</h2>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            $(window).scroll(function() {
+                $('.fadein').each(function(){
+                    var targetElement = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    if (scroll > targetElement - windowHeight + 100) {
+                    $(this).addClass('scrollin');
+                    }
+                });
+            });
+
+            $('#pic').hover (
+                function() {
+                    $('.language-text').fadeIn();
+                },
+                function() {
+                    $('.language-text').fadeOut();
+                }
+            );
+
+        });
+        
+    </script>
+</body>
+</html>

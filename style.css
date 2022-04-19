@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+    width: 300px;
+}
+
+.body{
+    background-color: rgb(150, 119, 252);
+}
+
+.container{
+    text-align: center;
+    padding-top: 40vh;
+}
+
+.mb-600{
+    margin-bottom: 200px;
+}
+
+#pic{
+    border-radius: 10px;
+    box-shadow:
+    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+    0 5px 6.1px rgba(0, 0, 0, 0.076),
+    0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+    0 19.2px 19.8px rgba(0, 0, 0, 0.092),
+    0 38.4px 34.8px rgba(0, 0, 0, 0.1),
+    0 101px 74px rgba(0, 0, 0, 0.13);
+}
+
+#red-text{
+    color: rgb(252, 241, 202);
+    padding-bottom: 50px;
+    
+}
+
+#In-N-Out-history{
+    margin-top: 50px;
+    display: none;
+    color: rgb(252, 241, 202);
+    
+}
+
+span{
+    color: rgb(252, 222, 113);
+}
+
+.fadein{
+    opacity: 0;
+    transform: translate(0, 80px);
+    transition: all 4000ms;
+}
+
+.fadein.scrollin{
+    opacity: 1;
+    transform: translate(0, 0);
+}
